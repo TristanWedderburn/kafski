@@ -3,6 +3,8 @@ Kafka example
 
 ## Usage
 
+- Export `$KAFKA_HOME` env variable for scripts
+
 To run the Consumer:
 - Run `bazel build //src/main/java/consumer:consumer_lib` to build the Consumer target 
 - Run `bazel build //src/main/java/consumer:consumer_deploy.jar` to package the Consumer target in a deployable .jar
