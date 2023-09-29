@@ -11,13 +11,13 @@ public class KafkaConsumerImpl {
     private static final Logger LOG = LoggerFactory.getLogger(KafkaConsumerImpl.class);
 
     public static void main(String[] args) {
-        // create consumer
+        // Create consumer
         final KafkaConsumer<String, String> consumer = new KafkaConsumer<String, String>(generateConsumerProperties());
         
-        // subscribe to topics
-        consumer.subscribe(Collections.singletonList(KafkaDefaults.TOPIC));
+        // Subscribe to topics
+        consumer.subscribe(Collections.singletonList(KafkaDefaults.TOPIC_NAME));
 
-        // poll for new data
+        // Poll for new data
         while(true){
             ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(KafkaDefaults.CONSUMER_POLL_FREQ_MILLIS));
 
