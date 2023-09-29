@@ -9,5 +9,5 @@ public class KafkaDefaults {
     public static final long CONSUMER_POLL_FREQ_MILLIS= 100;
 
     // TODO<TW>: Find better way to store topics
-    public static final String TOPIC = "tw-topic";
+    public static final String TOPIC_NAME = "tw-topic";
 }
